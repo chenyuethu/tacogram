@@ -3,8 +3,8 @@
 <% if @current_user %>
   <%= form_with :model => @post do |form| %>
     <div class="mb-3">
-      <%= form.label "body", :class => "form-label" %>
-      <%= form.text_field "body", :class => "form-control" %>
+      <%= form.label "uploaded_image", :class => "form-label" %>
+      <%= form.file_field "uploaded_image", :class => "form-control" %>
     </div>
 
     <div class="mb-3">
